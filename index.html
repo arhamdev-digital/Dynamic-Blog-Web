@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A dynamic blog website that loads post by API">
+    <title>Dynamic Blog Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#top">Blog<span>Space</span></a>
+        <p>Week 2 Internship Project</p>
+    </header>
+    <main id="#top">
+        <section class="hero">
+            <p class="eyebrow">READ - LEARN - GROW</p>
+            <h1>Stories For Curious <span>Minds.</span></h1>
+            <p class="hero-text">This blogs load its post by using public APIs of the JavaScript Fetch.</p>
+        </section>
+
+        <section class="blog-section">
+            <div class="blog-heading">
+                <div>
+                    <p class="eyebrow">
+                        Latest Articles
+                    </p>
+                    <h2>Explore Posts.</h2>
+                </div>
+                <label class="search-box" for="search-input">
+                    <span>$</span>
+                    <input
+                    id="search-input"
+                    type="search"
+                    placeholder="search post..."
+                    >
+                </label>
+            </div>
+            <p
+            id="status-message"
+            class="status-message"
+            aria-live="polite"
+            >Loading posts ....</p>
+            <div id="post-list" class="post-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>@2026 Blog WEB. Built with HTML . CSS and JAVASCRIPT</p>
+        <a href="#top">BACK To TOP ^</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
